@@ -72,7 +72,8 @@ const caluclatorApp = () => {
         operations(operand, previousNum, currNum) ?? currOperand.textContent
       }`;
       prevOperand.textContent = '';
-      currNum = currOperand.textContent === '0' ? '' : currOperand.textContent;
+      // currNum = currOperand.textContent === '0' ? '' : currOperand.textContent;
+      currNum = '';
       previousNum = '';
       operationCounter = 0;
     }
