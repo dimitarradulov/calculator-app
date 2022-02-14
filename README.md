@@ -1,2 +1,1 @@
-# calculator-app
- 
+# Calculator App (Vanilla JS)
