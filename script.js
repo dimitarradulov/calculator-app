@@ -8,6 +8,8 @@ const caluclatorApp = () => {
   const operations = (operand, num1, num2) => {
     let result;
 
+    if (!num1 && !num2) return undefined;
+
     if (!num2) num2 = num1;
 
     switch (operand) {
@@ -72,7 +74,6 @@ const caluclatorApp = () => {
         operations(operand, previousNum, currNum) ?? currOperand.textContent
       }`;
       prevOperand.textContent = '';
-      // currNum = currOperand.textContent === '0' ? '' : currOperand.textContent;
       currNum = '';
       previousNum = '';
       operationCounter = 0;
